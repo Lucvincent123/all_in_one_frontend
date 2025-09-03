@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react';
 // https://vite.dev/config/
 export default defineConfig({
     plugins: [react()],
-    base: '/all_in_one_frontend',
+    base: './', // <-- set this to your subfolder
 });
