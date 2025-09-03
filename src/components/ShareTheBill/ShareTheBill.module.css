@@ -1,0 +1,15 @@
+.sidebar {
+    position: fixed;
+    width: var(--sidebar-width);
+    height: 100vh;
+    background-color: var(--secondary-color);
+    transition: width 0.5s ease-in-out;
+}
+
+.content {
+    margin-left: var(--sidebar-width);
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    height: 120vh;
+    transition: margin-left 0.5s ease-in-out;
+}

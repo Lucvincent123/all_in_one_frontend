@@ -1,0 +1,25 @@
+.toTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, background 0.3s ease;
+    z-index: 1000;
+}
+
+.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.toTopBtn:hover {
+    background: #555;
+}

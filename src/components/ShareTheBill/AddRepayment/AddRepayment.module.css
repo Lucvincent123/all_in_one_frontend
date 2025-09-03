@@ -1,0 +1,147 @@
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1000;
+}
+
+.form {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: var(--primary-color) 1px solid;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    justify-self: center;
+    font-size: 24px;
+    color: var(--primary-color);
+    grid-area: title;
+}
+
+.search {
+    width: 200px;
+    position: relative;
+    padding: 10px 0;
+    height: 300px;
+    grid-area: search;
+    margin: 0 10px;
+}
+
+.input {
+    width: 200px;
+    border: 2px var(--secondary-color) solid;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.input:focus {
+    outline: 1px var(--secondary-color) solid;
+}
+
+.dropdown {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    max-height: calc(100% - 36px);
+    overflow-y: auto;
+}
+
+.dropdownItem {
+    border-bottom: 1px black solid;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdownItemEmail {
+    font-size: 10px;
+}
+
+.amount {
+    grid-area: amount;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.membersSelected {
+    padding: 10px 0;
+    grid-area: list;
+    padding: 10px;
+    width: 240px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: var(--secondary-color) 1px solid;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.selectedList {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    padding: 10px;
+    width: 100%;
+}
+
+.selectedMember {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.descInput {
+    width: 300px;
+    border: 2px var(--secondary-color) solid;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    grid-area: buttons;
+}
+
+.yes,
+.no {
+    padding: 5px 20px;
+    cursor: pointer;
+    border: 1px black solid;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.yes {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.yes:hover,
+.no:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}

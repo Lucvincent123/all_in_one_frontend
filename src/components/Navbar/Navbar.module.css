@@ -1,0 +1,121 @@
+.navbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar_list {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar_item {
+    height: 100%;
+}
+
+.navbar_link {
+    display: flex;
+    text-decoration: none;
+    height: 100%;
+    align-items: center;
+    width: 100px;
+    justify-content: center;
+    color: var(--text-color);
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.navbar_link:hover {
+    background-color: var(--secondary-color);
+}
+
+.navbar_dropdown {
+    position: relative;
+}
+
+.navbar_dropdown_menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.navbar_dropdown_link {
+    text-decoration: none;
+    color: var(--text-color);
+    height: 40px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.navbar_dropdown:hover .navbar_dropdown_menu {
+    display: block;
+}
+
+.navbar_dropdown_link:hover {
+    background-color: var(--secondary-color);
+}
+
+.userMenu {
+    position: relative;
+    height: 100%;
+    margin-right: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    background-image: url('../../assets/avatars/panda.jpg');
+    background-size: 80px;
+    background-position: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+.userInfo {
+    position: absolute;
+    top: 100%;
+    right: -80px;
+    background-color: #f9f9f9;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    cursor: context-menu;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.userNavbar {
+    display: flex;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+.userInfoItems {
+    padding: 10px;
+}
+
+.signout {
+    display: flex;
+    background-color: var(--primary-color);
+    color: white;
+    gap: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    align-items: center;
+}
+
+.signout:hover {
+    background-color: var(--secondary-color);
+}

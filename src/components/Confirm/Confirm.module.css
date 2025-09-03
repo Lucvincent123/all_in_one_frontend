@@ -1,0 +1,46 @@
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 200;
+}
+
+.form {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: var(--primary-color) 1px solid;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+}
+
+.yes,
+.no {
+    padding: 5px 20px;
+    cursor: pointer;
+    border: 1px black solid;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.yes {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.yes:hover,
+.no:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}

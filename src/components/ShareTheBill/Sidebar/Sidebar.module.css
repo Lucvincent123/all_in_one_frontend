@@ -1,0 +1,91 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 2px black solid;
+    /* position: relative; */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    background-color: var(--primary-color);
+    width: 100%;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+.content {
+    width: 100%;
+}
+
+.contentList {
+    width: 100%;
+}
+
+.contentItems {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px 0;
+    color: var(--text-color);
+}
+
+.contentItems:hover {
+    background-color: var(--background-color);
+    color: black;
+}
+
+.active {
+    background-color: var(--background-color);
+    color: black;
+}
+
+.avatar {
+    background-image: url('../../../assets/avatars/panda.jpg');
+    background-size: 100px;
+    background-position: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+
+    transition: transform 5s ease-in-out;
+}
+
+.email {
+    font-size: 10px;
+    font-style: italic;
+}
+
+.id {
+    font-size: 14px;
+}
+
+.username {
+    font-size: 24px;
+}
+
+.footer {
+    /* position: absolute; */
+    /* bottom: 0;
+     */
+    margin-top: auto;
+    width: 100%;
+    height: 40px;
+    background-color: var(--primary-color);
+}
+
+.backLink {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}

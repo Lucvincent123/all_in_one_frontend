@@ -1,0 +1,12 @@
+.container {
+    padding: 0 20px;
+}
+
+.header {
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    padding: 20px 0;
+}

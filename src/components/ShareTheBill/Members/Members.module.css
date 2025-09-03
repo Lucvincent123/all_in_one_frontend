@@ -1,0 +1,27 @@
+.member {
+    display: grid;
+    grid-template-columns: 2fr 3fr 100px;
+    background-color: white;
+    font-size: 18px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.username {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.email {
+    padding: 10px 0;
+}
+
+.balance {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.button {
+    cursor: pointer;
+}

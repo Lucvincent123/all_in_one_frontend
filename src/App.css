@@ -1,0 +1,54 @@
+:root {
+    --primary-color: #fe7743;
+    --secondary-color: #273f4f;
+    --text-color: white;
+    --background-color: #f1f1f1;
+    --link-color: #00809d;
+    --navbar-height: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home-page,
+.about-page,
+.contact-page {
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    display: grid;
+    grid-template-rows: 60px auto 60px;
+    grid-template-areas:
+        'header'
+        'content'
+        'footer';
+
+    position: relative;
+}
+
+.grid {
+    padding: 0 60px;
+}
+
+.header {
+    height: var(--navbar-height);
+    background-color: #fe7743;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    grid-area: header;
+}
+
+.content {
+    color: var(--text-color);
+    height: 100vh;
+    width: 100%;
+    grid-area: content;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--secondary-color);
+    height: 60px;
+    grid-area: footer;
+}

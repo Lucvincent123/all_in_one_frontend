@@ -1,0 +1,77 @@
+.container {
+    padding: 0 20px;
+}
+
+.header {
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    padding: 20px 0;
+}
+
+.leftMenu {
+    align-self: flex-end;
+    padding-bottom: 20px;
+    display: flex;
+}
+
+.leftMenuButton {
+    text-align: center;
+
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    width: 100px;
+    padding: 10px 0;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.leftMenuButton:hover {
+    background-color: var(--secondary-color);
+}
+
+.search {
+    align-self: center;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border: var(--secondary-color) solid 1px;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+.search:has(.searchInput:focus) {
+    border-color: var(--primary-color);
+    outline: var(--primary-color) solid 2px;
+}
+
+.searchInput {
+    border: none;
+    height: 40px;
+    width: 240px;
+    border: none;
+    outline: none;
+}
+
+.searchButton {
+    cursor: pointer;
+    padding: 0 4px;
+}
+
+.grid {
+    padding: 10px 40px;
+    display: grid;
+    gap: 20px;
+    /* This makes the grid responsive */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.error {
+    color: red;
+    font-size: 40px;
+    justify-self: center;
+    padding: 20px;
+}

@@ -1,0 +1,86 @@
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 500px;
+    /* height: 600px; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.title {
+    font-size: xx-large;
+    padding: 20px 0;
+}
+
+.formGroup {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 80px;
+    position: relative;
+}
+
+.label {
+    font-size: 20px;
+    position: absolute;
+    margin-left: 10px;
+    padding: 3px;
+    color: rgba(0, 0, 0, 0.3);
+    background-color: white;
+    margin-top: 10px;
+    transition: margin-top 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+    cursor: text;
+}
+
+.input {
+    font-size: 16px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input:focus + .label,
+.input:not(:placeholder-shown) + .label {
+    margin-top: -10px;
+    color: black;
+    font-size: 18px;
+}
+
+.button {
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.submit {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.button:active {
+    transform: scale(0.8);
+}
+
+.error {
+    color: red;
+    margin-bottom: 20px;
+}

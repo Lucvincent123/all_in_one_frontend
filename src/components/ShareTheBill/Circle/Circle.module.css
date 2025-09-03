@@ -1,0 +1,56 @@
+.zero {
+    --status-color: lightblue;
+}
+
+.positive {
+    --status-color: lightgreen;
+}
+
+.negative {
+    --status-color: #ff9999;
+}
+
+.circle {
+    background-color: var(--status-color);
+    border-radius: 10px;
+    width: 240px;
+    height: 120px;
+    place-self: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: black;
+    transition: transform 0.3s ease;
+    padding: 10px;
+}
+
+.circle:hover {
+    transform: scale(1.1);
+}
+
+.circle:active {
+    transform: scale(1);
+}
+
+.circleTitle {
+    font-size: 24px;
+}
+
+.circleBalance {
+    font-size: 20px;
+    padding-top: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.currency {
+    width: auto;
+    height: 20px;
+    padding: 0;
+    padding-right: 5px;
+    margin: 0;
+}
