@@ -35,6 +35,10 @@ export default function AddRepayment({ onCancel }: { onCancel: () => void }) {
             alert('Please enter a valid amount');
             return;
         }
+        if (desc.trim() === '') {
+            alert('Please enter a description');
+            return;
+        }
         const payload = {
             amount,
             title: desc,
